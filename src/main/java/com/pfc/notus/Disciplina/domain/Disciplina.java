@@ -1,4 +1,4 @@
-package com.pfc.notus;
+package com.pfc.notus.Disciplina.domain;
 
 
 import jakarta.persistence.*;
