@@ -14,11 +14,11 @@ import java.util.List;
 public class DisciplinaController {
     
     @Autowired
-    private DisciplinaService disiciplinaService;
+    private DisciplinaService disciplinaService;
     
     @GetMapping
     public List<Disciplina> getAllDisciplina(){
-        return disiciplinaService.findAllDisciplina();
+        return disciplinaService.findAllDisciplina();
     }
     
     
