@@ -1,4 +1,4 @@
-package com.pfc.notus;
+package com.pfc.notus.Atividade.domain;
 
 import jakarta.persistence.*;
 import lombok.Getter;
