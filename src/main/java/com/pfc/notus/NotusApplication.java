@@ -9,5 +9,4 @@ public class NotusApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(NotusApplication.class, args);
 	}
-
 }

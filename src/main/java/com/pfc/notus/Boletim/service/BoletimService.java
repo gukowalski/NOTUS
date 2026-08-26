@@ -15,11 +15,9 @@ public class BoletimService {
     @Autowired
     private BoletimRepository boletimrepository;
 
-    public List<BoletimDTO> getAllBoletim() {
-        return boletimrepository.findAll();
+    public List<Boletim> getAllBoletim() {
+       return boletimrepository.findAll();
 
     }
-        private BoletimDTO getBoletimDTO (Boletim boletim){
-            return new BoletimDTO(boletim.getPeriod(), boletim.getFinalAverage(), boletim.getStatus());
-        }
+
 }
