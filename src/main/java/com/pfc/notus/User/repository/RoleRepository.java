@@ -1,6 +1,6 @@
-package com.pfc.notus.User.repository;
+package com.pfc.notus.user.repository;
 
-import com.pfc.notus.User.domain.Role;
+import com.pfc.notus.user.domain.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

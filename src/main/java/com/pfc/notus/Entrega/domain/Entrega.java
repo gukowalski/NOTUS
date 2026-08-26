@@ -1,7 +1,7 @@
-package com.pfc.notus.Entrega.domain;
+package com.pfc.notus.entrega.domain;
 
-import com.pfc.notus.Atividade.domain.Atividade;
-import com.pfc.notus.Disciplina.domain.Disciplina;
+import com.pfc.notus.atividade.domain.Atividade;
+import com.pfc.notus.disciplina.domain.Disciplina;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

@@ -1,4 +1,4 @@
-package com.pfc.notus.User.domain;
+package com.pfc.notus.user.domain;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

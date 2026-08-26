@@ -1,4 +1,4 @@
-package com.pfc.notus.User.projection;
+package com.pfc.notus.user.projection;
 
 public interface UserDetailsProjection {
     String getUsername();

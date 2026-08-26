@@ -1,7 +1,7 @@
-package com.pfc.notus.Nota.repository;
+package com.pfc.notus.nota.repository;
 
 
-import com.pfc.notus.Nota.domain.Nota;
+import com.pfc.notus.nota.domain.Nota;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

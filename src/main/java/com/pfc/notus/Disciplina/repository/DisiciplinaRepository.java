@@ -1,4 +1,4 @@
-package com.pfc.notus.Disciplina.repository;
+package com.pfc.notus.disciplina.repository;
 
 
 import org.springframework.data.jpa.repository.JpaRepository;

@@ -1,8 +1,8 @@
-package com.pfc.notus.Atividade.service;
+package com.pfc.notus.atividade.service;
 
 
-import com.pfc.notus.Atividade.domain.Atividade;
-import com.pfc.notus.Atividade.repository.AtividadeRepository;
+import com.pfc.notus.atividade.domain.Atividade;
+import com.pfc.notus.atividade.repository.AtividadeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,7 +1,7 @@
-package com.pfc.notus.Turma.repository;
+package com.pfc.notus.turma.repository;
 
 
-import com.pfc.notus.Turma.domain.Turma;
+import com.pfc.notus.turma.domain.Turma;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

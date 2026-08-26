@@ -1,7 +1,7 @@
-package com.pfc.notus.User.repository;
+package com.pfc.notus.user.repository;
 
-import com.pfc.notus.User.domain.User;
-import com.pfc.notus.User.projection.UserDetailsProjection;
+import com.pfc.notus.user.domain.User;
+import com.pfc.notus.user.projection.UserDetailsProjection;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;

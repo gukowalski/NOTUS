@@ -1,7 +1,7 @@
-package com.pfc.notus.User.service;
+package com.pfc.notus.user.service;
 
-import com.pfc.notus.User.dto.AccountCredentialsDTO;
-import com.pfc.notus.User.dto.TokenDTO;
+import com.pfc.notus.user.dto.AccountCredentialsDTO;
+import com.pfc.notus.user.dto.TokenDTO;
 import com.pfc.notus.config.JwtTokenProvider;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

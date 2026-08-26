@@ -1,8 +1,8 @@
-package com.pfc.notus.Boletim.controller;
+package com.pfc.notus.boletim.controller;
 
 
-import com.pfc.notus.Boletim.domain.Boletim;
-import com.pfc.notus.Boletim.service.BoletimService;
+import com.pfc.notus.boletim.domain.Boletim;
+import com.pfc.notus.boletim.service.BoletimService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

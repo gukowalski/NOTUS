@@ -1,6 +1,6 @@
-package com.pfc.notus.Turma.domain;
+package com.pfc.notus.turma.domain;
 
-import com.pfc.notus.Atividade.domain.Atividade;
+import com.pfc.notus.atividade.domain.Atividade;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

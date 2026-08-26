@@ -1,7 +1,7 @@
-package com.pfc.notus.Atividade.repository;
+package com.pfc.notus.atividade.repository;
 
 
-import com.pfc.notus.Atividade.domain.Atividade;
+import com.pfc.notus.atividade.domain.Atividade;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

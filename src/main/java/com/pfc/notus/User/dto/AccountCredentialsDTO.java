@@ -1,4 +1,4 @@
-package com.pfc.notus.User.dto;
+package com.pfc.notus.user.dto;
 
 import lombok.Getter;
 

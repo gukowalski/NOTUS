@@ -1,7 +1,7 @@
-package com.pfc.notus.Disciplina.controller;
+package com.pfc.notus.disciplina.controller;
 
-import com.pfc.notus.Disciplina.domain.Disciplina;
-import com.pfc.notus.Disciplina.service.DisciplinaService;
+import com.pfc.notus.disciplina.domain.Disciplina;
+import com.pfc.notus.disciplina.service.DisciplinaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

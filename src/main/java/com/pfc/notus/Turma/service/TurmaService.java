@@ -1,7 +1,7 @@
-package com.pfc.notus.Turma.service;
+package com.pfc.notus.turma.service;
 
-import com.pfc.notus.Turma.domain.Turma;
-import com.pfc.notus.Turma.repository.TurmaRepository;
+import com.pfc.notus.turma.domain.Turma;
+import com.pfc.notus.turma.repository.TurmaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

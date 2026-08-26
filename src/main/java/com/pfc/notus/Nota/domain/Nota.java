@@ -1,4 +1,4 @@
-package com.pfc.notus.Nota.domain;
+package com.pfc.notus.nota.domain;
 
 import jakarta.persistence.*;
 import lombok.Getter;

@@ -1,4 +1,4 @@
-package com.pfc.notus.Boletim.domain;
+package com.pfc.notus.boletim.domain;
 
 import jakarta.persistence.*;
 import lombok.Getter;
