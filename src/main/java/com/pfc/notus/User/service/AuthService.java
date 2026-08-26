@@ -1,0 +1,35 @@
+package com.pfc.notus.User.service;
+
+import com.pfc.notus.User.dto.AccountCredentialsDTO;
+import com.pfc.notus.User.dto.TokenDTO;
+import com.pfc.notus.config.JwtTokenProvider;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.time.Instant;
+
+@Service
+public class AuthService {
+    private final AuthenticationManager authManager;
+    private final JwtTokenProvider jwtProvider;
+
+    public AuthService(AuthenticationManager authManager, JwtTokenProvider jwtProvider) {
+        this.authManager = authManager;
+        this.jwtProvider = jwtProvider;
+    }
+
+    @Transactional(readOnly = true)
+    public TokenDTO login(AccountCredentialsDTO dto) {
+        Authentication auth = authManager.authenticate(new UsernamePasswordAuthenticationToken(
+                dto.email(),
+                dto.password()));
+
+        String token = jwtProvider.createToken(dto.email(), auth.getAuthorities());
+        Instant expires = Instant.now().plusMillis(jwtProvider.getValidityMs());
+
+        return new TokenDTO(dto.email(), token, expires);
+    }
+}
