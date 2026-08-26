@@ -1,5 +1,6 @@
 package com.pfc.notus.Entrega.domain;
 
+import com.pfc.notus.Disciplina.domain.Disciplina;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -22,6 +23,7 @@ public class Entrega {
     private String status;
     @Getter @Setter
     private LocalDateTime submissionDate;
+
 
     public Entrega(String content, String status) {
         this.content = content;

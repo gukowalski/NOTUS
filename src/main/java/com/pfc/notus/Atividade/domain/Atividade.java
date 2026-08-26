@@ -1,5 +1,6 @@
 package com.pfc.notus.Atividade.domain;
 
+import com.pfc.notus.Disciplina.domain.Disciplina;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -20,6 +21,10 @@ public class Atividade {
     private String content;
     @Getter @Setter
     private String status;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn( name = "disciplina_id", nullable = false)
+    private Disciplina disciplina;
 
     public Atividade(String title, String content) {
         this.title = title;
