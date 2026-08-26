@@ -13,14 +13,14 @@ public class Nota {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Getter
-    private int id;
+    private Long id;
     @Getter @Setter
     private String period;
     @Getter @Setter
-    private Float value;
+    private Float rate;
 
-    public Nota(Float value, String period) {
-        this.value = value;
+    public Nota(Float rate, String period) {
+        this.rate = rate;
         this.period = period;
     }
 }
