@@ -1,5 +1,6 @@
 package com.pfc.notus.Entrega.domain;
 
+import com.pfc.notus.Atividade.domain.Atividade;
 import com.pfc.notus.Disciplina.domain.Disciplina;
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -24,6 +25,10 @@ public class Entrega {
     @Getter @Setter
     private LocalDateTime submissionDate;
 
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn( name = "atividade_id", nullable = false)
+    private Atividade atividade;
 
     public Entrega(String content, String status) {
         this.content = content;
