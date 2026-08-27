@@ -20,6 +20,14 @@ public class Turma {
     @Getter @Setter
     private String schoolYear;
 
+    @ManyToMany
+    @JoinTable(
+            name = "tb_turma_disciplina",
+            joinColumns = @JoinColumn(name = "turma_id"),
+            inverseJoinColumns = @JoinColumn(name = "disciplina_id")
+    )
+    private Set<Disciplina> disciplinas = new HashSet<>();
+
     public Turma(String name,String schoolYear){
         this.name = name;
         this.schoolYear = schoolYear;

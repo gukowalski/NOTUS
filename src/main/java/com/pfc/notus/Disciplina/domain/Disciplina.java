@@ -31,6 +31,9 @@ public class Disciplina {
     @Getter @Setter
     private List<Atividade> atividades = new ArrayList<>();
 
+    @ManyToMany(mappedBy = "disciplinas")
+    private Set<Turma> turmas = new HashSet<>();
+
     public Disciplina(String title, String description) {
         this.title = title;
         this.description = description;
