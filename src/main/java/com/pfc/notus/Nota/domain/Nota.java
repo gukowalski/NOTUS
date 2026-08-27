@@ -19,6 +19,10 @@ public class Nota {
     @Getter @Setter
     private Float rate;
 
+    @OneToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "entrega_id", nullable = false, unique = true)
+    private Entrega entrega;
+
     public Nota(Float rate, String period) {
         this.rate = rate;
         this.period = period;

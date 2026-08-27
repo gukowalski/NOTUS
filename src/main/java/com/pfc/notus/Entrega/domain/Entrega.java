@@ -26,6 +26,9 @@ public class Entrega {
     private LocalDateTime submissionDate;
 
 
+    @OneToOne(mappedBy = "Entrega", cascade = CascadeType.ALL)
+    private Nota Nota;
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn( name = "atividade_id", nullable = false)
     private Atividade atividade;
