@@ -21,6 +21,9 @@ public class Boletim {
     @Getter @Setter
     private String status;
 
+    @OneToMany(mappedBy = "Boletim", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Nota> notas = new ArrayList<>();
+
     public Boletim(String period, Float finalAverage){
         this.period = period;
         this.finalAverage = finalAverage;

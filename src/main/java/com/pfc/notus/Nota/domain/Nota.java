@@ -23,6 +23,11 @@ public class Nota {
     @JoinColumn(name = "entrega_id", nullable = false, unique = true)
     private Entrega entrega;
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "boletim_id", nullable = false)
+    private Boletim boletim;
+
+
     public Nota(Float rate, String period) {
         this.rate = rate;
         this.period = period;
