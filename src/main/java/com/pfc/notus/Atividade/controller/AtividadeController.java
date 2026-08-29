@@ -13,9 +13,10 @@ import java.util.List;
 @RestController
 @RequestMapping(value = "/atividade")
 public class AtividadeController {
+
     @Autowired
     private AtividadeService atividadeService;
 
     @GetMapping
-    public List<Atividade> getAllAtividade(){return atividadeService.findAllAtividade();}
+    public List<Atividade> getAllAtividade(){return atividadeService.getAllAtividade();}
 }

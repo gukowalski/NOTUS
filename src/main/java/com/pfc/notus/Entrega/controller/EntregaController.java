@@ -15,5 +15,5 @@ public class EntregaController {
     private EntregaService entregaService;
 
     @GetMapping
-    public List<Entrega> getAllEntrega() { return entregaService.findAllEntrega();}
+    public List<Entrega> getAllEntrega() { return entregaService.getAllEntrega();}
 }

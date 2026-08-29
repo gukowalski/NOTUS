@@ -18,6 +18,6 @@ public class TurmaController {
     private TurmaService turmaService;
 
     @GetMapping
-    public List<Turma> getAllTurmas() {return turmaService.findAllTurma();}
+    public List<Turma> getAllTurmas() {return turmaService.getAllTurma();}
 
 }

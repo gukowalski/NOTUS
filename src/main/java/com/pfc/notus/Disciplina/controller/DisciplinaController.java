@@ -18,7 +18,7 @@ public class DisciplinaController {
     
     @GetMapping
     public List<Disciplina> getAllDisciplina(){
-        return disciplinaService.findAllDisciplina();
+        return disciplinaService.getAllDisciplina();
     }
     
     

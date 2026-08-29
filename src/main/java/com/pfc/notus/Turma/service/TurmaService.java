@@ -13,5 +13,5 @@ public class TurmaService {
     @Autowired
     private TurmaRepository turmaRepository;
 
-    public List<Turma> findAllTurma() {return turmaRepository.findAll();}
+    public List<Turma> getAllTurma() {return turmaRepository.findAll();}
 }

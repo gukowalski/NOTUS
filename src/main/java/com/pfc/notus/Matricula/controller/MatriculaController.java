@@ -17,5 +17,5 @@ public class MatriculaController {
     private MatriculaService matriculaService;
 
     @GetMapping
-    public List<Matricula> getAllMatricula(){return matriculaService.findAllMatricula();}
+    public List<Matricula> getAllMatricula(){return matriculaService.getAllMatricula();}
 }

@@ -15,7 +15,7 @@ public class BoletimService {
     @Autowired
     private BoletimRepository boletimRepository;
 
-    public List<Boletim> findAllBoletim() {
+    public List<Boletim> getAllBoletim() {
        return boletimRepository.findAll();
 
     }

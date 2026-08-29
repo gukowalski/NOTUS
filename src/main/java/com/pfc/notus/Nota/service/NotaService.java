@@ -13,5 +13,5 @@ public class NotaService {
     @Autowired
     private NotaRepository notaRepository;
 
-    public List<Nota> findAllNota(){return notaRepository.findAll();}
+    public List<Nota> getAllNota(){return notaRepository.findAll();}
 }

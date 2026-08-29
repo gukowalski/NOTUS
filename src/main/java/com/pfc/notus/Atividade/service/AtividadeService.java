@@ -14,5 +14,5 @@ public class AtividadeService {
        @Autowired
     private AtividadeRepository atividadeRepository;
 
-       public List<Atividade> findAllAtividade(){return atividadeRepository.findAll();}
+       public List<Atividade> getAllAtividade(){return atividadeRepository.findAll();}
 }

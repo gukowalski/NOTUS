@@ -11,7 +11,7 @@ public class DisciplinaService {
     @Autowired
     private DisiciplinaRepository disciplinaRepository;
 
-    public List<Disciplina> findAllDisciplina() {
+    public List<Disciplina> getAllDisciplina() {
         return disciplinaRepository.findAll();
     }
 }

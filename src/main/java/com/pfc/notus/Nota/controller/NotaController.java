@@ -17,5 +17,5 @@ public class NotaController {
     private NotaService notaService;
 
     @GetMapping
-    public List<Nota> getAllNota(){return notaService.findAllNota();}
+    public List<Nota> getAllNota(){return notaService.getAllNota();}
 }

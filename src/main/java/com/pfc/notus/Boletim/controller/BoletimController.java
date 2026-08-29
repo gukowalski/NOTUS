@@ -18,5 +18,5 @@ public class BoletimController {
     private BoletimService boletimService;
 
     @GetMapping
-    public List<Boletim> getAllBoletim(){return boletimService.findAllBoletim();}
+    public List<Boletim> getAllBoletim(){return boletimService.getAllBoletim();}
 }

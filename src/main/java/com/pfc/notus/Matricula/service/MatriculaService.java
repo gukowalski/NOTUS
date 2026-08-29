@@ -14,5 +14,5 @@ public class MatriculaService {
     @Autowired
     private MatriculaRepository matriculaRepository;
 
-    public List<Matricula> findAllMatricula(){return matriculaRepository.findAll();}
+    public List<Matricula> getAllMatricula(){return matriculaRepository.findAll();}
 }

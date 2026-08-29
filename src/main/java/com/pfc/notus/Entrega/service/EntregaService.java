@@ -13,5 +13,5 @@ public class EntregaService {
     @Autowired
     private EntregaRepository entregaRepository;
 
-    public List<Entrega> findAllEntrega() {return entregaRepository.findAll();}
+    public List<Entrega> getAllEntrega() {return entregaRepository.findAll();}
 }
