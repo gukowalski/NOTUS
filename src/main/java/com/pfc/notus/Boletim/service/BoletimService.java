@@ -13,10 +13,10 @@ import java.util.List;
 public class BoletimService {
 
     @Autowired
-    private BoletimRepository boletimrepository;
+    private BoletimRepository boletimRepository;
 
-    public List<Boletim> getAllBoletim() {
-       return boletimrepository.findAll();
+    public List<Boletim> findAllBoletim() {
+       return boletimRepository.findAll();
 
     }
 
