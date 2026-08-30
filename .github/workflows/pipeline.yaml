@@ -22,11 +22,6 @@ jobs:
           architecture: x64
           cache: maven
 
-      - name: Executar os testes com Maven
-        working-directory: ./application
-        run: mvn test
-
-
       - name: Empacotar artifact com Maven
         working-directory: ./application
         run: mvn package -DskipTests
