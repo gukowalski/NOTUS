@@ -1,10 +1,14 @@
 package com.pfc.notus.turma.domain;
 
 import com.pfc.notus.atividade.domain.Atividade;
+import com.pfc.notus.disciplina.domain.Disciplina;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table(name = "tb_turma")

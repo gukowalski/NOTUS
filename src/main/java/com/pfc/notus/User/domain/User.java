@@ -43,6 +43,12 @@ public class User implements UserDetails {
     private Set<Role> roles = new HashSet<>();
 
 
+    public User(String username, String password) {
+        this.username = username;
+        this.password = password;
+    }
+
+
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return roles;
@@ -76,5 +82,18 @@ public class User implements UserDetails {
     @Override
     public boolean isEnabled() {
         return true;
+    }
+
+    public void addRole(Role role) {
+        roles.add(role);
+    }
+
+    public boolean hasRole(String roleName) {
+        for (Role role : roles) {
+            if (role.getAuthority().equals(roleName)) {
+                return true;
+            }
+        }
+        return false;
     }
 }

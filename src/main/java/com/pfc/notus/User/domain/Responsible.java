@@ -16,8 +16,7 @@ public class Responsible {
     @Id
     private Long id;
 
-    @OneToMany(mappedBy = "id.responsible")
+    @OneToMany(mappedBy = "responsible")
     @MapsId
-    @JoinColumn(name = "student_id")
     private List<Student> student = new ArrayList<>();
 }

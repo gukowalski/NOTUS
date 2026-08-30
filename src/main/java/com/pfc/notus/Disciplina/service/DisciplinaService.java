@@ -1,5 +1,7 @@
 package com.pfc.notus.disciplina.service;
 
+import com.pfc.notus.disciplina.domain.Disciplina;
+import com.pfc.notus.disciplina.repository.DisiciplinaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

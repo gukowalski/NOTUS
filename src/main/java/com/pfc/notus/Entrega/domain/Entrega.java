@@ -1,6 +1,7 @@
 package com.pfc.notus.entrega.domain;
 
 import com.pfc.notus.atividade.domain.Atividade;
+import com.pfc.notus.nota.domain.Nota;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -25,7 +26,7 @@ public class Entrega {
     private LocalDateTime submissionDate;
 
 
-    @OneToOne(mappedBy = "Entrega", cascade = CascadeType.ALL)
+    @OneToOne(mappedBy = "entrega", cascade = CascadeType.ALL)
     private Nota Nota;
 
     @ManyToOne(fetch = FetchType.LAZY)

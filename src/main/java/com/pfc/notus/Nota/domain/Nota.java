@@ -1,5 +1,7 @@
 package com.pfc.notus.nota.domain;
 
+import com.pfc.notus.boletim.domain.Boletim;
+import com.pfc.notus.entrega.domain.Entrega;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

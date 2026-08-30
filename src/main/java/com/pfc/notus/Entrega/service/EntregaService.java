@@ -1,9 +1,10 @@
 package com.pfc.notus.Entrega.service;
 
 
+import com.pfc.notus.entrega.domain.Entrega;
+import com.pfc.notus.entrega.repository.EntregaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.pfc.notus.entrega.repository.EntregaRepository;
 
 import java.util.List;
 

@@ -1,9 +1,13 @@
 package com.pfc.notus.boletim.domain;
 
+import com.pfc.notus.nota.domain.Nota;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name ="tb_boletim")
@@ -21,7 +25,7 @@ public class Boletim {
     @Getter @Setter
     private String status;
 
-    @OneToMany(mappedBy = "Boletim", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "boletim", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Nota> notas = new ArrayList<>();
 
     public Boletim(String period, Float finalAverage){
