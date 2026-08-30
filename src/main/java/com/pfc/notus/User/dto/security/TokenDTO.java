@@ -1,4 +1,4 @@
-package com.pfc.notus.user.dto;
+package com.pfc.notus.user.dto.security;
 
 import java.time.Instant;
 

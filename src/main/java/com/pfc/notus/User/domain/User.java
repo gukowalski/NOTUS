@@ -19,7 +19,6 @@ import java.util.Set;
 public class User implements UserDetails {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Getter
     private Long id;
 

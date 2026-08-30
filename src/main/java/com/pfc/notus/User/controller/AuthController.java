@@ -1,8 +1,8 @@
 package com.pfc.notus.user.controller;
 
 
-import com.pfc.notus.user.dto.AccountCredentialsDTO;
-import com.pfc.notus.user.dto.TokenDTO;
+import com.pfc.notus.user.dto.security.AccountCredentialsDTO;
+import com.pfc.notus.user.dto.security.TokenDTO;
 import com.pfc.notus.user.service.AuthService;
 import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
