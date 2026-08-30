@@ -23,7 +23,7 @@ jobs:
           cache: maven
 
       - name: Empacotar artifact com Maven
-        working-directory: ./application
+        working-directory: .
         run: mvn package -DskipTests
 
 
