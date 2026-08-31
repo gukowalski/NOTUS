@@ -18,7 +18,7 @@ public class Student {
     @JoinColumn(name = "id")
     private User user;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "responsible_id")
     private Responsible responsible;
 

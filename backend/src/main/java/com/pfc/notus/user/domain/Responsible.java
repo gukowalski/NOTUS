@@ -2,7 +2,9 @@ package com.pfc.notus.user.domain;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,4 +21,17 @@ public class Responsible {
     @OneToMany(mappedBy = "responsible")
     @MapsId
     private List<Student> student = new ArrayList<>();
+
+    @Getter @Setter
+    private String name;
+
+    @Getter @Setter
+    private String email;
+
+    @Getter @Setter
+    private String phone;
+
+    @OneToMany(mappedBy = "responsible", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Student> students = new ArrayList<>();
+
 }
