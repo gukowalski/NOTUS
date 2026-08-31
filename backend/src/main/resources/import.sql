@@ -22,14 +22,10 @@ INSERT INTO tb_turma (name, school_year) VALUES ('9º Ano B', '2026');
 INSERT INTO tb_atividade (title, content, status, disciplina_id) VALUES ('Lista de Exercícios 1', 'Resolver os exercícios das páginas 10 a 15.', 'ABERTA', 1);
 INSERT INTO tb_atividade (title, content, status, disciplina_id) VALUES ('Redação Dissertativa', 'Escrever uma redação sobre o tema sorteado em sala.', 'ABERTA', 2);
 
--- 7. Entregas (Relacionadas às Atividades)
-INSERT INTO tb_entrega (content, status, submission_date, atividade_id) VALUES ('Resposta do aluno para a lista de exercícios.', 'ENVIADA', '2026-03-01T14:30:00', 1);
-INSERT INTO tb_entrega (content, status, submission_date, atividade_id) VALUES ('Redação entregue pelo aluno.', 'ENVIADA', '2026-03-02T09:15:00', 2);
-
 -- 8. Boletins
 INSERT INTO tb_boletim (period, final_average, status) VALUES ('1º Bimestre', 8.5, 'APROVADO');
 INSERT INTO tb_boletim (period, final_average, status) VALUES ('1º Bimestre', 7.0, 'APROVADO');
 
 -- 9. Notas (Vinculadas OBRIGATORIAMENTE à Entrega e ao Boletim)
-INSERT INTO tb_nota (period, rate, entrega_id, boletim_id) VALUES ('1º Bimestre', 8.5, 1, 1);
-INSERT INTO tb_nota (period, rate, entrega_id, boletim_id) VALUES ('1º Bimestre', 7.0, 2, 2);
+INSERT INTO tb_nota (period, rate,  boletim_id) VALUES ('1º Bimestre', 8.5, 1);
+INSERT INTO tb_nota (period, rate, boletim_id) VALUES ('1º Bimestre', 7.0, 2);

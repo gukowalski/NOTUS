@@ -1,7 +1,6 @@
 package com.pfc.notus.nota.domain;
 
 import com.pfc.notus.boletim.domain.Boletim;
-import com.pfc.notus.entrega.domain.Entrega;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -20,10 +19,6 @@ public class Nota {
     private String period;
     @Getter @Setter
     private Float rate;
-
-    @OneToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "entrega_id", nullable = false, unique = true)
-    private Entrega entrega;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "boletim_id", nullable = false)
