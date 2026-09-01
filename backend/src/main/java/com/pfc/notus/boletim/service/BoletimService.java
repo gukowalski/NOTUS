@@ -2,7 +2,9 @@ package com.pfc.notus.boletim.service;
 
 
 import com.pfc.notus.boletim.domain.Boletim;
+import com.pfc.notus.boletim.dto.BoletimDTO;
 import com.pfc.notus.boletim.repository.BoletimRepository;
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -17,6 +19,17 @@ public class BoletimService {
     public List<Boletim> getAllBoletim() {
        return boletimRepository.findAll();
 
+    }
+
+    @Transactional
+    public BoletimDTO save(BoletimDTO dto) {
+        Boletim entity = new Boletim();
+        entity.setPeriod(dto.period());
+        entity.setFinalAverage(dto.finalAverage());
+        entity.setStatus(dto.status());
+
+        entity = boletimRepository.save(entity);
+        return new BoletimDTO(entity.getPeriod(), entity.getFinalAverage(), entity.getStatus());
     }
 
 }
