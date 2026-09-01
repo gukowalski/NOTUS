@@ -29,4 +29,10 @@ public class BoletimController {
         URI uri = uriBuilder.path("/boletim/{id}").buildAndExpand(created.id()).toUri();
         return ResponseEntity.created(uri).body(created);
     }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> delete(@PathVariable Long id){
+        boletimService.delete(id);
+        return ResponseEntity.noContent().build();
+    }
 }

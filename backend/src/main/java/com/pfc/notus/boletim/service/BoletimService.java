@@ -4,6 +4,7 @@ package com.pfc.notus.boletim.service;
 import com.pfc.notus.boletim.domain.Boletim;
 import com.pfc.notus.boletim.dto.BoletimDTO;
 import com.pfc.notus.boletim.repository.BoletimRepository;
+import jakarta.persistence.EntityNotFoundException;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -29,7 +30,14 @@ public class BoletimService {
         entity.setStatus(dto.status());
 
         entity = boletimRepository.save(entity);
-        return new BoletimDTO(entity.getPeriod(), entity.getFinalAverage(), entity.getStatus());
+        return new BoletimDTO(entity.getId(), entity.getPeriod(), entity.getFinalAverage(), entity.getStatus());
     }
 
+    @Transactional
+    public void delete(Long id) {
+        if (boletimRepository.existsById(id)) {
+            throw  new EntityNotFoundException("Boletim com id " + id + " não  encontrado");
+        }
+        boletimRepository.deleteById(id);
+    }
 }
